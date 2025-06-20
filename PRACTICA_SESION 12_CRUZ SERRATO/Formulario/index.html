@@ -29,7 +29,7 @@
       </div>
 
       <div class="form-group two-columns">
-        <label for="telefono">Teléfono:</label>
+        <label for="telefono">Teléfono: <span>*</span></label>
         <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su número de teléfono" aria-label="Teléfono">
       </div>
 
@@ -39,7 +39,7 @@
       </div>
 
       <div class="form-group two-columns">
-        <label for="pais">País:</label>
+        <label for="pais">País:<span>*</span></label>
         <select id="pais" name="pais" aria-label="País">
           <option value="peru">Perú</option>
           <option value="argentina">Argentina</option>
@@ -49,16 +49,18 @@
       </div>
 
       <div class="form-group two-columns">
-        <label>Género: <span>*</span></label>
-        <div class="radio-group">
+        
+    <label for="genero">Género: <span>*</span></label>
+      <div class="radio-group" id="genero">
           <label><input type="radio" name="genero" value="masculino" required> Masculino</label>
           <label><input type="radio" name="genero" value="femenino"> Femenino</label>
           <label><input type="radio" name="genero" value="otro"> Otro</label>
-        </div>
       </div>
 
+    </div>
+
       <div class="form-group two-columns">
-        <label for="color">Color Favorito:</label>
+        <label for="color">Color Favorito: <span>*</span></label>
         <input type="color" id="color" name="color" value="#ff0000" aria-label="Color favorito">
       </div>
 
@@ -72,18 +74,17 @@
        <input type="file" id="archivo" name="archivo" required aria-label="Archivo">
      </div>
 
-    <div class="form-group two-columns condiciones ">
-        <label>
-            <input type="checkbox" required aria-label="Términos"> Acepto los términos y condiciones <span>*</span>
-        </label>
-        </div>
+  <div class="form-group checkbox">
+  <label for="terminos">
+    <input type="checkbox" id="terminos" required aria-label="Términos">Acepto los términos y condiciones<span>*</span>
+  </label>
+</div>
 
-      <div class="form-buttons">
-        <button type="reset" class="btn btn-red">Limpiar</button>
-        <button type="submit" class="btn btn-green">Enviar</button>
-      </div>
-    </form>
-  </div>
+
+<div class="form-buttons">
+  <button type="reset" class="btn btn-red">Limpiar</button>
+  <button type="submit" class="btn btn-green">Enviar</button>
+</div>
 
 </body>
 </html>
