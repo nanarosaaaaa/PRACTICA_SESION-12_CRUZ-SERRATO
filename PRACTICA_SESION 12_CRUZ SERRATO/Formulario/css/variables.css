@@ -1,0 +1,12 @@
+:root {
+  --font-main: 'Segoe UI', Tahoma, sans-serif;
+  --color-bg: #f8f9fa;
+  --color-primary: #0d6efd;
+  --color-red: #dc3545;
+  --color-green: #198754;
+  --color-border: #ced4da;
+  --color-label: #212529;
+  --color-focus: #86b7fe;
+  --radius: 5px;
+  --shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}

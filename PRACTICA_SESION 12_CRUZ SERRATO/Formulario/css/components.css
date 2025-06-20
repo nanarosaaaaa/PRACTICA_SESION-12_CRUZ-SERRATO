@@ -1,0 +1,178 @@
+
+
+.form-group {
+  margin-bottom: 1.2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.two-columns {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.two-columns label {
+  width: 30%;
+  min-width: 120px;
+  text-align: right;
+  padding-right: 1em;
+}
+
+.two-columns input,
+.two-columns select,
+.two-columns textarea,
+.two-columns .radio-group {
+  width: 65%;
+  min-width: 200px;
+}
+
+
+.form-group.archivo input[type="file"] {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  padding: 0.5em;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+
+.form-group.condiciones {
+  background-color: #e0f7fa;
+  padding: 1em;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  margin-top: 1em;
+}
+
+.form-group label span {
+  color: var(--color-red);
+}
+
+
+input,
+textarea,
+select {
+  padding: 0.6em;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  font-size: 1em;
+  transition: border-color 0.3s;
+  width: 100%;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--color-focus);
+  outline: none;
+}
+
+input:valid,
+textarea:valid,
+select:valid {
+  border-color: var(--color-green);
+}
+
+input:invalid:focus,
+textarea:invalid:focus,
+select:invalid:focus {
+  border-color: var(--color-red);
+}
+
+
+.radio-group {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.radio-group label {
+  background: #e9f0f9;
+  padding: 0.5em 1em;
+  border-radius: var(--radius);
+}
+
+
+input[type="color"] {
+  width: 50px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+
+input[type="file"] {
+  padding: 0.5em 0;
+}
+
+
+.checkbox {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5em;
+}
+
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1em;
+  margin-top: 2em;
+}
+
+.btn {
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  border-radius: var(--radius);
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-red {
+  background-color: var(--color-red);
+}
+
+.btn-red:hover {
+  background-color: #bb2d3b;
+}
+
+.btn-green {
+  background-color: var(--color-green);
+}
+
+.btn-green:hover {
+  background-color: #157347;
+}
+
+@media (max-width: 768px) {
+  .form-group.two-columns {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .two-columns label {
+    width: 100%;
+    text-align: left;
+    padding-right: 0;
+    margin-bottom: 0.5em;
+  }
+
+  .two-columns input,
+  .two-columns select,
+  .two-columns textarea,
+  .two-columns .radio-group {
+    width: 100%;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

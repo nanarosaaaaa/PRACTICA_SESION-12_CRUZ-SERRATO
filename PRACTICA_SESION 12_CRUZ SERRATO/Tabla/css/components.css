@@ -1,0 +1,31 @@
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.styled-table thead {
+  background-color: var(--color-header);
+  color: white;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 1em;
+  text-align: left;
+}
+
+.styled-table tbody tr:nth-child(odd) {
+  background-color: var(--color-row-odd);
+}
+
+.styled-table tbody tr:nth-child(even) {
+  background-color: var(--color-row-even);
+}
+
+.styled-table tbody tr:hover {
+  background-color: var(--color-hover);
+  transition: background 0.3s ease;
+}

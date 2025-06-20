@@ -1,0 +1,50 @@
+#gradient-box {
+  margin-top: 2em;
+  padding: 2em;
+  border-radius: var(--border-radius);
+  background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+  color: var(--color-white);
+  box-shadow: var(--shadow);
+  transition: background 0.5s ease; 
+}
+
+#gradient-box h2 {
+  margin-bottom: 1em;
+}
+
+.color-inputs {
+  margin: 1em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.color-inputs label {
+  font-weight: bold;
+  color: var(--color-white);
+}
+
+input[type="color"] {
+  cursor: pointer;
+  border: none;
+  width: 40px;
+  height: 30px;
+}
+
+/*botoncito*/
+button {
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-white);
+  color: var(--color-text-primary);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--button-hover-bg);
+  color: var(--button-hover-text);
+}

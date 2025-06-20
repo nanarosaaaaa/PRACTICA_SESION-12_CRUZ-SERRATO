@@ -1,0 +1,21 @@
+.form-container {
+  background-color: white;
+  padding: 2em;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  max-width: 700px;
+  width: 100%;
+}
+
+h1 {
+  color: var(--color-primary);
+  font-size: 1.8em;
+  text-align: center;
+  margin-bottom: 0.2em;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 2em;
+  color: var(--color-label);
+}

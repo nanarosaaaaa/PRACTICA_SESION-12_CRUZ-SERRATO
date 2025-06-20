@@ -1,0 +1,11 @@
+:root {
+  --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --color-bg: #d3d3d3;
+  --color-text-primary: #333;
+  --color-text-secondary: #555;
+  --color-white: #ffffff;
+  --button-hover-bg: #333;
+  --button-hover-text: #ffffff;
+  --shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  --border-radius: 10px;
+} 

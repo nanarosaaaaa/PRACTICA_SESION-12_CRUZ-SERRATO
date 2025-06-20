@@ -1,0 +1,7 @@
+body {
+  background-color: var(--color-bg);
+  font-family: var(--font-main);
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+}
