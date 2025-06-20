@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Registro</title>
+ 
+  <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+  <div class="form-container">
+    <h1>FORMULARIO DE REGISTRO</h1>
+    <p>Mándame un mensaje y te responderé a la brevedad</p>
+
+    <form>
+      <div class="form-group two-columns">
+        <label for="nombre">Nombre: <span>*</span></label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required aria-label="Nombre">
+      </div>
+
+      <div class="form-group two-columns">
+        <label for="email">Correo Electrónico: <span>*</span></label>
+        <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico" required aria-label="Correo electrónico">
+      </div>
+
+      <div class="form-group two-columns">
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su número de teléfono" aria-label="Teléfono">
+      </div>
+
+      <div class="form-group two-columns">
+        <label for="fecha">Fecha de Nacimiento: <span>*</span></label>
+        <input type="date" id="fecha" name="fecha" required aria-label="Fecha de nacimiento">
+      </div>
+
+      <div class="form-group two-columns">
+        <label for="pais">País:</label>
+        <select id="pais" name="pais" aria-label="País">
+          <option value="peru">Perú</option>
+          <option value="argentina">Argentina</option>
+          <option value="chile">Chile</option>
+          <option value="ecuador">Ecuador</option>
+        </select>
+      </div>
+
+      <div class="form-group two-columns">
+        <label>Género: <span>*</span></label>
+        <div class="radio-group">
+          <label><input type="radio" name="genero" value="masculino" required> Masculino</label>
+          <label><input type="radio" name="genero" value="femenino"> Femenino</label>
+          <label><input type="radio" name="genero" value="otro"> Otro</label>
+        </div>
+      </div>
+
+      <div class="form-group two-columns">
+        <label for="color">Color Favorito:</label>
+        <input type="color" id="color" name="color" value="#ff0000" aria-label="Color favorito">
+      </div>
+
+      <div class="form-group two-columns">
+        <label for="mensaje">Mensaje: <span>*</span></label>
+        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escriba su mensaje aquí" required aria-label="Mensaje"></textarea>
+      </div>
+
+      <div class="form-group two-columns archivo">
+       <label for="archivo">Adjuntar Archivo: <span>*</span></label>
+       <input type="file" id="archivo" name="archivo" required aria-label="Archivo">
+     </div>
+
+    <div class="form-group two-columns condiciones ">
+        <label>
+            <input type="checkbox" required aria-label="Términos"> Acepto los términos y condiciones <span>*</span>
+        </label>
+        </div>
+
+      <div class="form-buttons">
+        <button type="reset" class="btn btn-red">Limpiar</button>
+        <button type="submit" class="btn btn-green">Enviar</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
