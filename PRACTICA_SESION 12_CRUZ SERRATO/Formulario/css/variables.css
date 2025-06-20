@@ -7,6 +7,9 @@
   --color-border: #ced4da;
   --color-label: #212529;
   --color-focus: #86b7fe;
+  --color-blue-box: #e0f0ff;
+  --color-celeste-box: #e6f7ff;
   --radius: 5px;
   --shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
+
